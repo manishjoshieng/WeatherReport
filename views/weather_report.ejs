@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body class="gradient-background">
+    <h1 class="title">Weather Report</h1>
+    <div id="weather-placeholder" class="weather-report">
+        <h1 id="city-name"> <%= city_name %></h1>
+        <h2><%= describe %></h2>
+        <div class="row_container">
+            <img  id="weather-img" src= <%= img_url %> >
+            <h2><span id="temp"><%= temp_value %></span>
+                <span id="unit">&#8451;</span>
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 🌤️ -->
